@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>World Air destination</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="destination.css"> <!-- Lien vers le fichier CSS -->
+    <link rel="icon" href="/logo_WA.png" type="image/png">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <li><a href="/world air public/acceuil/acceuil.html"><img src="/logo.png" alt="Logo de World Air"></a></li>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/world_air_public/acceuil/acceuil.html">ACCUEIL</a></li>
+                    <li><a href="#">NOUS REJOINDRE</a></li>
+                    <li><a href="/world_air_public/nous contacter/nous contacter.html">NOUS CONTACTER</a></li>
+                    <li class="dropdown">
+                        <a href="#">NOS PILOTES</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/world_air_public/nos_pilote/liste/liste.html">LISTE DES PILOTES</a></li>
+                            <li><a href="/world_air_public/nos_pilote/carnet/carnet.html">CARNET DE VOL</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">SUR NOUS</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/world_air_public/notres flote/flotte acceuil.html">NOTRE FLOTTE</a></li>
+                            <li><a href="/world_air_public/nos destination/WDA destination Long courier/WDA destination Long courier.html">NOS DESTINATIONS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ESPACE PILOTES [INOP]</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="search-indicators">
+        <select id="hub-select">
+            <option value="">Tout les hub</option>
+            <option value="LFMN">LFMN</option>
+            <option value="CYUL">CYUL</option>
+            <option value="LFPO">LFPO</option>
+        </select>
+        <input type="text" id="search-depart" placeholder="Rechercher par départ">
+        <input type="text" id="search-arrivee" placeholder="Rechercher par arrivée">
+
+    </div>
+    
+    
+
+    <div class="flight-container">
+        <div class="flight-card">
+            <img src="dubai.webp" alt="DUBAI">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">DUBAI (OMDB)</h3>
+            <p>6h 40min<br>936€<br> 4784Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="seoul.webp" alt="SÉOUL">
+            <h3 class="dep">NICE (LFMN) </h3>
+            <h3 class="arr">SÉOUL (RKSI)</h3>
+            <p>10h 27min<br>1657€<br>9116Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="cancun.webp" alt="CANCÚN">
+            <h3 class="dep">MONTREAL (CYUL)</h3>
+            <h3 class="arr">CANCÚN (MMUN)</h3>
+            <p>4h 35min<br>635€<br>2969Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Montreal.webp" alt="MONTREAL">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">MONTREAL (CYUL)</h3>
+            <p>7h 37min<br>1160€<br> 6128Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Tenerife.webp" alt="TENERIFE">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">TENERIFE (GCXO)</h3>
+            <p>3h 37min<br>588€<br>2691kM</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Nice.webp" alt="NICE">
+            <h3 class="dep">PARIS (LFPO)</h3> 
+            <h3 class="arr">NICE (LFMN)</h3>
+            <p>1h 9min<br>252€<br>676Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Palermes.png" alt="PALERME">
+            <h3 class="dep">PARIS (LFPO)</h3> 
+            <h3 class="arr">PALERME (LICJ)</h3>
+            <p>1h 40min<br>383€<br>1456Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="bergen.jpg" alt="BERGEN">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">BERGEN (ENBR)</h3>
+            <p>2h 23min<br>448€<br>1854Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="chicago.webp" alt="CHICAGO">
+            <h3 class="dep">MONTREAL (CYUL)</h3>
+            <h3 class="arr">CHICAGO (KORD)</h3>
+            <p>1h 39min<br>341€<br>1200Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="london.webp" alt="LONDRE">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">LONDRE (EGLL)</h3>
+            <p>1h 39min<br>312€<br>1041Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="dublin.webp" alt="DUBLIN">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">DUBLIN  (EIDW)</h3>
+            <p>1h 32min<br> 385€<br> 1467Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="riyadh.jpg" alt="RIYADH">
+            <h3 class="dep">NICE (LFMN)</h3> 
+            <h3 class="arr">RIYADH (OERK)</h3>
+            <p>5h 20min<br> 825€<br> 4126Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Zagreb.avif" alt="ZAGREB">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">ZAGREB (LDZA)</h3>
+            <p>3h 10min<br> 264€<br>737Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="bruxelles.webp" alt="BREUXELLES">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">BRUXELLES (EBBR)</h3>
+            <p>1h 45min<br> 278€<br> 832Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="dublin.webp" alt="DUBLIN">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">DUBLIN (EIDW)</h3>
+            <p>1h 55min<br> 273€<br> 796Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="rennes.jpg" alt="RENNES">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">RENNES (LFRN)</h3>
+            <p>1h 40min<br> 281€<br> 848Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Palermes.png" alt="PALERME">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">PALERME (LICJ)</h3>
+            <p>1h 35min<br> 271€<br> 783Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="ajaccio.jpg" alt="AJACCIO">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">AJACCIO (LFKJ)</h3>
+            <p>1h 35min<br> 292€<br> 907Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="toulouse.jpg" alt="TOULOUSE">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">TOULOUSE (LFBO)</h3>
+            <p>1h 15min<br> 219€<br> 470Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="minorque.jpg" alt="MINORQUE">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">MINORQUE (LEMH)</h3>
+            <p>0h 56min<br> 222€<br> 489Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="BEYROUTH.jfif" alt="BEYROUTH">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">BEYROUTH (OLBA)</h3>
+            <p>3h 13min<br> 637€<br> 2669Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="detroit.jpg" alt="#">
+            <h3 class="dep">MONTREAL (CYUL)</h3>
+            <h3 class="arr">DETROIT (KDTW)</h3>
+            <p>1h 55min<br> 283€<br> 850Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="ibiza.jfif" alt="IBIZA">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">IBIZA (LEIB)</h3>
+            <p>1h 35min<br> 260€<br> 722Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="moscou.jpg" alt="MOSCOU">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">MOSCOU (UUMO)</h3>
+            <p>3h 15min<br> 554€<br> 2484Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="ajaccio.jpg" alt="AJACCIO">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">AJACCIO (LFKJ)</h3>
+            <p>30min<br> 180€<br> 233Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Argel.webp" alt="ALGER">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">ALGER (DAAG)</h3>
+            <p>1h 12min<br> 281€<br> 854Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="rome.webp" alt="ROME">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">ROME (LIRF)</h3>
+            <p>1h 15min<br> 217€<br> 459Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="london.webp" alt="LONDON">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">LONDRE (EGLL)</h3>
+            <p>1h 10min<br> 201€<br> 367Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="madrid.webp" alt="#">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">MADRID (LEMD)</h3>
+            <p>2h<br> 299€<br> 956Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="venice.webp" alt="VENISE">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">VENISE (LIPZ)</h3>
+            <p>1h 05min<br> 215€<br> 456Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Sevilla.webp" alt="SÉVILLE">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">SÉVILLE (LEZL)</h3>
+            <p>2h 25min<br> 376€<br> 1422Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="manchester.webp" alt="MANCHESTER">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">MANCHESTER (EGCC)</h3>
+            <p>1h 35min<br> 241€<br> 607Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="moscou.jpg" alt="MOSCOU">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">MOSCOU (UUMO)</h3>
+            <p>3h 48min<br> 562€<br> 2521Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Lisbona.webp" alt="LISBONNE">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">LISBONNE (LPPT)</h3>
+            <p>2h 35min<br> 379€<br> 1437Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="manchester.webp" alt="MANCHESTER">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">MANCHESTER (EGCC)</h3>
+            <p>1h 38min<br> 353€<br> 1282Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Montpellier.webp" alt="MONTPELLIER ">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">MONTPELLIER (LFMT)</h3>
+            <p>54min<br> 239€<br> 585Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Sevilla.webp" alt="SÉVILLE">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">SÉVILLE (LEZL)</h3>
+            <p>1h 48min<br> 358€<br> 1306Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="munich.webp" alt="MUNICH">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">MUNICH (EDDM)</h3>
+            <p>1h<br> 245€<br> 630Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="DORTMUND.jfif" alt="DORTMUND">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">DORTMUND (EDLW)</h3>
+            <p>47min<br> 222€<br> 485Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="bruxelles.webp" alt="BRUXELLES">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">BRUXELLES (EBBR)</h3>
+            <p>1h 02min<br> 187€<br> 285Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Lyon.webp" alt="LYON">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">LYON (LFLL)</h3>
+            <p>55min<br> 187€<br> 285Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Lyon.webp" alt="LYON">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">LYON (LFLL)</h3>
+            <p>48min<br> 206€<br> 393Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="madrid.webp" alt="MADRID">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">MADRID (LEMD)</h3>
+            <p>2h 05min<br> 311€<br> 1028Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="bangalore.webp" alt="BANGALORE">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">BANGALORE (VOBL)</h3>
+            <p>9h 08min<br> 1381€<br> 7434Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Barcelona.webp" alt="BARCELONE">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">BARCELONE (LEBL)</h3>
+            <p>1h 20min<br> 222€<br> 496Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Doha.webp" alt="DOHA">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">DOHA (OTHH)</h3>
+            <p>5h 55min<br> 889€<br> 4486Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="gibraltar.jpg" alt="GIBRALTAR">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">GIBRALTAR (LXGB)</h3>
+            <p>2h 32min<br> 367€<br> 1356Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Barcelona.webp" alt="BARCELONE">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">BARCELONE (LEBL)</h3>
+            <p>1h 40min<br> 278€<br> 826Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="liverpool.webp" alt="LIVERPOOL">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">LIVERPOOL (EGGP)</h3>
+            <p>2h 20min<br> 358€<br> 1304Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="bergen.jpg" alt="BERGEN">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">BERGEN (ENBR)</h3>
+            <p>2h 20min<br> 358€<br> 1298Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="NewYork.webp" alt="NEWYORK">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">NEW YORK (KJFK)</h3>
+            <p>8h 52min<br> 1210€<br> 6406Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="tokyo.webp" alt="TOKYO">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">TOKYO (LFMN)</h3>
+            <p>11h 48min<br> 1807€<br> 9986Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="NewYork.webp" alt="NEWYORK">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">NEW YORK (KJFK)</h3>
+            <p>8h 15min<br> 1114€<br> 5832Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="buenos-aires.webp" alt="BUENOS AIRES">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">BUENOS AIRES (SAEZ)</h3>
+            <p>13h 05min<br> 1971€<br> 10969Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="" alt="SBGL">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">RIO DE JANEIRO (SBGL)</h3>
+            <p>h min<br> 1638€<br> 9004Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="" alt="EFRO">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">ROVANIEMI (EFRO)</h3>
+            <p>h min<br> 539€<br> 2395Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="" alt="KSFO">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">SAN FRANCISCO (KSFO)</h3>
+            <p>h min<br> 1633€<br> 8977Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="NewYork.webp" alt="KLGA">
+            <h3 class="dep">MONTREAL (CYUL)</h3>
+            <h3 class="arr">NEWYORK (KLGA)</h3>
+            <p>h min<br> 226€<br> 522Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="" alt="KSFO">
+            <h3 class="dep">MONTREAL (CYUL)</h3>
+            <h3 class="arr">SAN FRANCISCO</h3>
+            <p>h min<br> 819€<br> 4076Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="" alt="KLAS">
+            <h3 class="dep">MONTREAL (CYUL)</h3>
+            <h3 class="arr">LAS VEGAS (KLAS)</h3>
+            <p>h min<br> 737€<br> 3597Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="" alt="CYVR">
+            <h3 class="dep">MONTREAL (CYUL)</h3>
+            <h3 class="arr">VANCOUVER (CYVR)</h3>
+            <p>h min<br> 751€<br> 3682Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>      
+        <div class="flight-card">
+            <img src="" alt="#">
+            <h3 class="dep"></h3>
+            <h3 class="arr"></h3>
+            <p>h min<br> €<br> Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="" alt="#">
+            <h3 class="dep"></h3>
+            <h3 class="arr"></h3>
+            <p>h min<br> €<br> Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="" alt="#">
+            <h3 class="dep"></h3>
+            <h3 class="arr"></h3>
+            <p>h min<br> €<br> Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="" alt="#">
+            <h3 class="dep"></h3>
+            <h3 class="arr"></h3>
+            <p>h min<br> €<br> Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="" alt="#">
+            <h3 class="dep"></h3>
+            <h3 class="arr"></h3>
+            <p>h min<br> €<br> Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="" alt="#">
+            <h3 class="dep"></h3>
+            <h3 class="arr"></h3>
+            <p>h min<br> €<br> Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="" alt="#">
+            <h3 class="dep"></h3>
+            <h3 class="arr"></h3>
+            <p>h min<br> €<br> Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="" alt="#">
+            <h3 class="dep"></h3>
+            <h3 class="arr"></h3>
+            <p>h min<br> €<br> Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="" alt="#">
+            <h3 class="dep"></h3>
+            <h3 class="arr"></h3>
+            <p>h min<br> €<br> Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        
+        
+
+      
+        
+        
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="destination.js"></script> <!-- Lien vers le fichier JavaScript -->
+</html>

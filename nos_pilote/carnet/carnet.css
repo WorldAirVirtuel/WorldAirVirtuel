@@ -1,0 +1,127 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #444;
+}
+
+header {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #0e274a;
+    width: 100%;
+    border-bottom: 1px solid #0e274a;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* Pour permettre le positionnement du sous-menu */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Couleur de texte en blanc */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Poids de police normal */
+    font-size: 16px;
+}
+
+/* Effet au survol des liens */
+nav ul li a:hover {
+    color: #007bff; /* Couleur de survol */
+}
+
+/* Styles pour le sous-menu */
+.dropdown-menu {
+    display: none; /* Masquer le sous-menu par défaut */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0e274a;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-width: 200px;
+    border: 1px solid #0e274a; /* Ajouter une bordure */
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    color: #fff; /* Couleur de texte du sous-menu */
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    color: #007bff; /* Couleur de survol du sous-menu */
+}
+
+/* Afficher le sous-menu au survol */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+h1 {
+    text-align: left;
+    margin: 20px 0;
+    color: #fff;
+    margin-left: 135px;
+    margin-top: 50px;
+}
+
+#flight-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+}
+
+#flight-table thead {
+    background-color: #333;
+    color: #fff;
+}
+
+#flight-table thead th {
+    padding: 10px;
+    text-align: left;
+}
+
+#flight-table tbody tr {
+    border-bottom: 1px solid #ccc;
+}
+
+#flight-table tbody td {
+    padding: 10px;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0e274a; /* Couleur de fond pour le footer */
+    color: #fff; /* Couleur du texte dans le footer */
+    position: absolute;
+    bottom: 10;
+    width: 100%;
+}

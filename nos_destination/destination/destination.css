@@ -1,0 +1,171 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #444;
+}
+
+header {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #0e274a;
+    width: 100%;
+    border-bottom: 1px solid #0e274a;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* Pour permettre le positionnement du sous-menu */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Couleur de texte en blanc */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Poids de police normal */
+    font-size: 16px;
+}
+
+/* Effet au survol des liens */
+nav ul li a:hover {
+    color: #007bff; /* Couleur de survol */
+}
+
+/* Styles pour le sous-menu */
+.dropdown-menu {
+    display: none; /* Masquer le sous-menu par défaut */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0e274a;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-width: 200px;
+    border: 1px solid #0e274a; /* Ajouter une bordure */
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    color: #fff; /* Couleur de texte du sous-menu */
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    color: #007bff; /* Couleur de survol du sous-menu */
+}
+
+/* Afficher le sous-menu au survol */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0e274a; /* Couleur de fond pour le footer */
+    color: #fff; /* Couleur du texte dans le footer */
+    position: absolute;
+    bottom: 10;
+    width: 100%;
+}
+
+img {
+    width: auto;
+    height: 170px;
+    max-width: 100%;
+}
+
+
+.search-indicators {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.search-indicators select, 
+.search-indicators input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.flight-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flight-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 30%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ddd;
+}
+
+.flight-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.flight-card h3 {
+    margin: 10px 0;
+}
+
+.reserve-button {
+    display: block;
+    text-align: center;
+    background-color: #ff4500;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+p{
+    text-align: right;
+}
+
+.search-indicators {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #444;
+}
+
+.search-indicators input, 
+.search-indicators select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    width: 30%;
+}

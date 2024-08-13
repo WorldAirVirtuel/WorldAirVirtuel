@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>World Carnet de vol</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="carnet.css"> <!-- Lien vers le fichier CSS -->
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <li><a href="/world air public/acceuil/acceuil.html"><img src="/logo.png" alt="Logo de World Air"></a></li>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/world_air_public/acceuil/acceuil.html">ACCUEIL</a></li>
+                    <li><a href="#">NOUS REJOINDRE</a></li>
+                    <li><a href="/world_air_public/nous contacter/nous contacter.html">NOUS CONTACTER</a></li>
+                    <li class="dropdown">
+                        <a href="#">NOS PILOTES</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/world_air_public/nos_pilote/liste/liste.html">LISTE DES PILOTES</a></li>
+                            <li><a href="/world_air_public/nos_pilote/carnet/carnet.html">CARNET DE VOL</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">SUR NOUS</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/world_air_public/notres flote/flotte acceuil.html">NOTRE FLOTTE</a></li>
+                            <li><a href="/world_air_public/nos destination/WDA destination Long courier/WDA destination Long courier.html">NOS DESTINATIONS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ESPACE PILOTES [INOP]</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1>CARNET DE VOL</h1>
+    <table id="flight-table" class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Nom du Pilote</th>
+                <th>Départ</th>
+                <th>Arrivée</th>
+                <th>Type d'Avion</th>
+                <th>Numéro de Vol</th>
+                <th>FPM</th>
+                <th>Profit</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Les données seront insérées ici -->
+        </tbody>
+    </table>
+
+    <footer>
+        © World Air
+    </footer>
+
+    <script src="carnet.js"></script> <!-- Lien vers le fichier JavaScript -->
+</body>
+</html>
